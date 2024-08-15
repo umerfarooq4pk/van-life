@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "miragejs": "^0.2.0-alpha.3",
     "tailwindcss": "^3.4.7"
   }
 }
