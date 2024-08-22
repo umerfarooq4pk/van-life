@@ -9,10 +9,10 @@ const Vans = () => {
             .then(data => setVans(data.vans))
     }, [])
 
-    // console.log("vans ======>", vans)
+    console.log("vans ======>", vans)
 
     const vansHTML = vans.map(item => (
-            <Link to={`/van/${item.id}`} className="single_van">    
+            <Link key={item.id} to={`/van/${item.id}`} className="single_van">    
                 <img className=" max-w-full rounded" alt={item.name} src={item.imageUrl} />
                 <div className="detail flex justify-between mt-3 mb-1">
                     <p className="font-semibold text-xl text-[#161616]">{item.name}</p>
